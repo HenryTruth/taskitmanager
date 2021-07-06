@@ -169,7 +169,7 @@ export default {
               this.message = result.email[0]
               this.result_error = true
               setTimeout(() =>{
-                this.result_error = false
+                // this.result_error = false
               },6000)
             }
             
@@ -201,32 +201,34 @@ export default {
   border-radius: .5rem;
   border: none;
   background-color: #F8D7DA;
-  animation: pandaAnimation 5s ease forwards;
+  height: 7rem;
+  // animation: pandaAnimation 5s ease forwards;
   p{
     margin: 2rem 0;
   }
-  @keyframes pandaAnimation{
-    0%{
-      opacity: 1;
-    }
-    60%{
-      opacity: .7;
-    }
-    100%{
-      opacity: 0;
-      display: none;
-    }
-  }
+  // @keyframes pandaAnimation{
+  //   0%{
+  //     opacity: 1;
+  //   }
+  //   60%{
+  //     opacity: .7;
+  //   }
+  //   100%{
+  //     opacity: 0;
+  //     display: none;
+  //   }
+  // }
  
 }
 .form-signup{
   background-color: white;
-  grid-row: 2/3;
+  grid-row: 1/3;
   grid-column: 2/3;
   border-radius: .5rem;
   display: grid;
   grid-template-rows: repeat(5,1fr);
   padding: 2rem;
+  margin-top: 7rem;
 
   .p-5{
     padding:2rem;
