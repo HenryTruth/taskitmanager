@@ -73,7 +73,7 @@ export default {
         redirect: "follow",
       };
 
-      fetch("http://localhost:8000/api/auth/jwt/", requestOptions)
+      fetch("https://taskitbackendapi.herokuapp.com/api/auth/jwt/", requestOptions)
         .then((response) => response.json())
         .then((result) => {
           console.log(result);

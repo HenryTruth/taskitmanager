@@ -77,7 +77,7 @@ export default {
         redirect: "follow",
       };
 
-      fetch(`http://localhost:8000/api/todos/${todo.id}/`, requestOptions)
+      fetch(`https://taskitbackendapi.herokuapp.com/${todo.id}/`, requestOptions)
         .then((response) => response.text())
         .then((result) => {
         })
@@ -100,7 +100,7 @@ export default {
         redirect: "follow",
       };
 
-      fetch(`http://localhost:8000/api/todos/${id}/`, requestOptions)
+      fetch(`https://taskitbackendapi.herokuapp.com/${id}/`, requestOptions)
         .then((response) => response.text())
         .then((result) => {
           console.log(result);
@@ -129,19 +129,19 @@ export default {
 
     setTimeout(() => {
       fetch(
-      `http://localhost:8000/api/user/${localStorage.getItem(
+      `https://taskitbackendapi.herokuapp.com/api/user/${localStorage.getItem(
         "username"
       )}/todos/?page=${i}`,
       requestOptions
     )
       .then((response) => response.json())
       .then((result) => {
-        for (const i in result) {
+        for (const i in result.results) {
           this.todos = {
             ...this.todos,
-            title: result[i].title,
-            id: result[i].id,
-            completed: result[i].completed,
+            title: result.results[i].title,
+            id: result.results[i].id,
+            completed: result.results[i].completed,
           };
           this.foltodos.push(this.todos);
         }

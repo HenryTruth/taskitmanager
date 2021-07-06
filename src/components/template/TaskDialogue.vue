@@ -36,7 +36,7 @@ export default {
             body: formdata,
             redirect: 'follow'
             };
-            fetch("http://localhost:8000/api/todos/", requestOptions)
+            fetch("https://taskitbackendapi.herokuapp.com/api/todos/", requestOptions)
             .then(response => response.json())
             .then(result => {
                 this.$router.push('/taskadded')

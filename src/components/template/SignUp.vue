@@ -151,7 +151,7 @@ export default {
         redirect: "follow",
       };
 
-      fetch("http://localhost:8000/api/auth/register/", requestOptions)
+      fetch("https://taskitbackendapi.herokuapp.com/api/auth/register/", requestOptions)
         .then((response) => response.json())
         .then((result) => {
           console.log(result);
