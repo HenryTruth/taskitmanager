@@ -1,1 +1,1 @@
-The bacakend for the taskit app
+The backend for the taskit app
