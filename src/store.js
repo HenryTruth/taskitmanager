@@ -1,5 +1,6 @@
 import { reactive } from 'vue'
-import passwordComplexity from "joi-password-complexity"
+import {passwordComplexity} from "joi-password-complexity"
+// import { JoiPasswordComplexity } from "joi-password"
 
 class Store {
     constructor() {
