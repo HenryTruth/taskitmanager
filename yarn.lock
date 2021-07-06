@@ -464,7 +464,7 @@
   "resolved" "https://registry.npmjs.org/joi-password-complexity/-/joi-password-complexity-5.1.0.tgz"
   "version" "5.1.0"
 
-"joi@>= 17":
+"joi@^17.4.0", "joi@>= 17":
   "integrity" "sha512-F4WiW2xaV6wc1jxete70Rw4V/VuMd6IN+a5ilZsxG4uYtUXWu2kq9W5P2dz30e7Gmw8RCbY/u/uk+dMPma9tAg=="
   "resolved" "https://registry.npmjs.org/joi/-/joi-17.4.0.tgz"
   "version" "17.4.0"
